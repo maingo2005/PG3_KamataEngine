@@ -12,6 +12,7 @@ public:
 	int GetSpeedX() const { return speedX_; };
 	int GetAlive() const { return Alive_; };
 
+	void SetPosX(int a) { transform_.x = a; }
 	void SetAlive(bool Alive);
 	void SetSpeedX(bool SpeedX);
 

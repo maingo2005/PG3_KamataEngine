@@ -9,21 +9,10 @@ StangScene::~StangScene(){
 }
 
 void StangScene::Update(char* keys, char* preKeys) {
-	if (preKeys[DIK_SPACE] == 0 && keys[DIK_SPACE]) {
-		sceneNo = STAGE;
-	}
-
 	player->Update(keys, preKeys);
 	enemy->Update(keys, preKeys);
 
-	int distance3 = enemy->GetPosX() - player->GetPosX();
-	int distance4 = enemy->GetPosY() - player->GetPosY();
-
-	int b = (int)sqrtf((float)distance3 * (float)distance3 + (float)distance4 * (float)distance4);
-
-	if (b <= (enemy->GetRadius() + player->GetRadius())) {
-		player->SetAlive(true);
-	}
+	CollisionBulletEnemy();
 }
 
 void StangScene::CollisionBulletEnemy(){
@@ -36,6 +25,7 @@ void StangScene::CollisionBulletEnemy(){
 	if (a <= (player->bullet_->GetRadius() + enemy->GetRadius())) {
 		enemy->SetAlive(true);
 		enemy->SetSpeedX(0);
+		sceneNo = CLEAR;
 	}
 }
 

@@ -47,7 +47,7 @@ void Player::Update(char* keys, char* preKeys) {
 	if (keys[DIK_D] && preKeys[DIK_D]) {
 		speedX_ = 1;
 	}
-	if (keys[DIK_SPACE] && !preKeys[DIK_SPACE] && bullet_->isShot_ == false) {
+	if (keys[DIK_Q] && !preKeys[DIK_Q] && bullet_->isShot_ == false) {
 		bullet_->transform_ = transform_;
 		bullet_->isShot_ = true;
 	}

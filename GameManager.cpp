@@ -9,10 +9,7 @@ GameManager::GameManager()
 	currentSceneNo_ = TITLE;
 }
 
-GameManager::~GameManager() 
-{
-
-}
+GameManager::~GameManager() {}
 
 int GameManager::Run(char* keys, char* preKeys) 
 {
