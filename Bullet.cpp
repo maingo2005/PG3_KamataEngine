@@ -1,28 +1,24 @@
-#include "Novice.h"
 #include "Bullet.h"
+#include "Novice.h"
 
-Bullet::Bullet(Transform transform, int s, int r2, bool i) {
-	transform_ = transform;
-	speed_ = s;
-	r_ = r2;
-	isShot_ = i;
+Bullet::Bullet(Vector2 pos, int speed, int r, bool isShot){
+	pos_ = pos;
+	speed_ = speed;
+	r_ = r;
+	isShot_ = isShot;
 }
 
-void Bullet::SetisShot(bool i) {
-	isShot_ = i;
-}
-
-void Bullet::Update() {
-	if (isShot_ == true) {
-		transform_.y -= speed_;
-		if (transform_.y <= 0) {
+void Bullet::Update(){
+	if (isShot_ == true){
+		pos_.y -= speed_;
+		if (pos_.y <= 0){
 			isShot_ = false;
 		}
 	}
 }
 
-void Bullet::Draw() {
-	if (isShot_ == true) {
-		Novice::DrawEllipse(transform_.x, transform_.y, r_, r_, 0.0f, WHITE, kFillModeSolid);
+void Bullet::Draw(){
+	if (isShot_ == true){
+		Novice::DrawEllipse((int)pos_.x, (int)pos_.y, r_, r_, 0.0f, WHITE, kFillModeSolid);
 	}
 }

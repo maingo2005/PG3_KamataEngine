@@ -1,21 +1,18 @@
 #include "GameManager.h"
+using namespace std;//stdを省略できる
 
-GameManager::GameManager()
-{
-	sceneArr_[TITLE] = std::make_unique<TitleScene>();
-	sceneArr_[STAGE] = std::make_unique<StangScene>();
-	sceneArr_[CLEAR] = std::make_unique<ClearScene>();
+GameManager::GameManager(){
+	sceneArr_[TITLE] = make_unique<TitleScene>();
+	sceneArr_[STAGE] = make_unique<StageScene>();
+	sceneArr_[CLEAR] = make_unique<ClearScene>();
 
 	currentSceneNo_ = TITLE;
 }
 
 GameManager::~GameManager() {}
 
-int GameManager::Run(char* keys, char* preKeys) 
-{
-
-	while (Novice::ProcessMessage() == 0)
-	{
+int GameManager::Run(char* keys, char* preKeys) {
+	while (Novice::ProcessMessage() == 0) {
 
 		Novice::BeginFrame();
 		memcpy(preKeys, keys, 256);
@@ -24,8 +21,7 @@ int GameManager::Run(char* keys, char* preKeys)
 		prevSceneNo_ = currentSceneNo_;
 		currentSceneNo_ = sceneArr_[currentSceneNo_]->GetSceneNo();
 
-		if (prevSceneNo_ != currentSceneNo_)
-		{
+		if (prevSceneNo_ != currentSceneNo_) {
 			sceneArr_[currentSceneNo_]->Init();
 		}
 

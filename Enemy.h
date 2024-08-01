@@ -1,28 +1,14 @@
 #pragma once
-#include <Struct.h>
+#include "Vector2.h"
 
 class Enemy {
 public:
-
-	Enemy(Transform t, int r, int sX, bool a);
-
-	int GetPosX() const { return transform_.x; };
-	int GetPosY() const { return transform_.y; };
-	int GetRadius() const { return radius_; };
-	int GetSpeedX() const { return speedX_; };
-	int GetAlive() const { return Alive_; };
-
-	void SetPosX(int a) { transform_.x = a; }
-	void SetAlive(bool Alive);
-	void SetSpeedX(bool SpeedX);
-
-	void Update(char* keys, char* preKeys);
-
+	Enemy(Vector2 pos, int s, int r, int isAlive);
+	void Update();
 	void Draw();
-
-private:
-	Transform transform_;
-	int speedX_;
+public:
+	Vector2 pos_;
+	int speed_;
 	int radius_;
-	bool Alive_;
+	bool isAlive_;
 };

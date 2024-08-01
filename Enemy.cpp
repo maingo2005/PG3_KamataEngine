@@ -1,36 +1,22 @@
 #include <Novice.h>
 #include "Enemy.h"
+#include "Bullet.h"
 
-Enemy::Enemy(Transform t, int r, int sX, bool a) {
-	transform_ = t;
-	speedX_ = sX;
+Enemy::Enemy(Vector2 pos, int s, int r, int isAlive){
+	pos_ = pos;
 	radius_ = r;
-	Alive_ = a;
+	speed_ = s;
+	isAlive_ = isAlive;
 }
 
-void Enemy::SetAlive(bool Alive) {
-	Alive_ = Alive;
-}
+void Enemy::Update() {
+	pos_.x += speed_;
 
-void Enemy::SetSpeedX(bool SpeedX) {
-	speedX_ = SpeedX;
-}
-
-void Enemy::Update(char* keys, char* preKeys) {
-	transform_.x += speedX_;
-
-	if (keys[DIK_R] && preKeys[DIK_R] && Alive_ == true) {
-		Alive_ = false;
-		speedX_ = 10;
-	}
-
-	if (transform_.x - radius_ <= 0 || transform_.x + radius_ >= 1280) {
-		speedX_ *= -1;
+	if (pos_.x - radius_ <= 0 || pos_.x + radius_ >= 1280) {
+		speed_ *= -1;
 	}
 }
 
 void Enemy::Draw() {
-	if (Alive_ == false) {
-		Novice::DrawEllipse(transform_.x, transform_.y, radius_, radius_, 0.0f, RED, kFillModeSolid);
-	}
+	Novice::DrawEllipse((int)pos_.x, (int)pos_.y, radius_, radius_, 0.0f, RED, kFillModeSolid);
 }

@@ -38,9 +38,6 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Bullet.cpp">
-      <Filter>KamataEngine</Filter>
-    </ClCompile>
     <ClCompile Include="ClearScene.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
@@ -59,10 +56,13 @@
     <ClCompile Include="Player.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
-    <ClCompile Include="STangScene.cpp">
+    <ClCompile Include="StageScene.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
     <ClCompile Include="TitleScene.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -145,8 +145,8 @@
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="IScene.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="STangScene.h" />
-    <ClInclude Include="Struct.h" />
+    <ClInclude Include="StageScene.h" />
     <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="Struct.h" />
   </ItemGroup>
 </Project>
