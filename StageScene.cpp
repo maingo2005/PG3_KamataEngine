@@ -13,27 +13,42 @@ void StageScene::Init() {
 	enemy_ = new Enemy({ 100, 300 }, 3, 16, true);
 }
 
-void StageScene::Update(char* keys, char* preKeys) {
-	player_->Update(keys, preKeys);
-	enemy_->Update();
+int StageScene::enemyHP(int hp) {
 
-	float r1 = (float)enemy_->radius_;
-	float r2 = (float)player_->bullet_->r_;
-	float r3 = (float)player_->r_;
+	if (hp == 0) {
+		sceneNo = CLEAR;
+		return 0;
+	}
 
 	float a = enemy_->pos_.x - player_->bullet_->pos_.x;
 	float b = enemy_->pos_.y - player_->bullet_->pos_.y;
 	float distance1 = sqrtf(a * a + b * b);
 
+	float r1 = (float)enemy_->radius_;
+	float r2 = (float)player_->bullet_->r_;
+
+	if (distance1 <= r1 + r2) {
+		hp = hp - 1;
+	}
+
+	return enemyHP(hp);
+}
+
+void StageScene::Update(char* keys, char* preKeys) {
+	player_->Update(keys, preKeys);
+	enemy_->Update();
+
+	float r1 = (float)enemy_->radius_;
+	float r3 = (float)player_->r_;
+
 	float c = player_->pos_.x - enemy_->pos_.x;
 	float d = player_->pos_.y - enemy_->pos_.y;
 	float distance2 = sqrtf(c * c + d * d);
 
-	if (distance1 <= r1 + r2) {
-		sceneNo = CLEAR;
-	}
+	int hp = 3;
+	int m = enemyHP(hp);
 
-	if (distance2 <= r3 + r1) {
+	if (distance2 >= r3 - r1) {
 		sceneNo = OVER;
 	}
 }

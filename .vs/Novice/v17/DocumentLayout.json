@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\StageScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:StageScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\StageScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:StageScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StageScene.h",
+              "DocumentMoniker": "C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\StageScene.h",
+              "RelativeDocumentMoniker": "StageScene.h",
+              "ToolTip": "C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\StageScene.h",
+              "RelativeToolTip": "StageScene.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-02T16:40:13.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "StageScene.cpp",
               "DocumentMoniker": "C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\StageScene.cpp",
               "RelativeDocumentMoniker": "StageScene.cpp",
               "ToolTip": "C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\StageScene.cpp",
               "RelativeToolTip": "StageScene.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-01T06:46:40.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\MAINGO SHIZUKA\\Downloads\\\u305D\u306E\u4ED6\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\\u65E5\u672C\u5DE5\u5B66\u9662\u5C02\u9580\u5B66\u6821\\PG3_\u8AB2\u984C\u30D5\u30A9\u30EB\u30C0\\PG3_KamataEngine\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
