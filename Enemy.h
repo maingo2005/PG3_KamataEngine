@@ -10,5 +10,6 @@ public:
 	Vector2 pos_;
 	int speed_;
 	int radius_;
+	int enemyHandle;
 	bool isAlive_;
 };

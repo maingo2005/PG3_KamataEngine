@@ -7,6 +7,8 @@ Player::Player(Vector2 pos, int r, int speed) {
 	speed_ = speed;
 
 	bullet_ = new Bullet({ 0, 0 }, 10, 10, false);
+
+	playerHandle = Novice::LoadTexture("./Resources/Player.png");
 }
 
 Player::~Player() {
@@ -39,5 +41,6 @@ void Player::Update(char* keys, char* preKeys) {
 
 void Player::Draw() {
 	Novice::DrawEllipse((int)pos_.x, (int)pos_.y, r_, r_, 0.0f, GREEN, kFillModeSolid);
+	Novice::DrawSprite((int)pos_.x - 15, (int)pos_.y - 15, playerHandle, 1.0f, 1.0f, 0.0f, WHITE);
 	bullet_->Draw();
 }

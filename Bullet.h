@@ -7,6 +7,7 @@ public:
 	Vector2 pos_;
 	int speed_;
 	int r_;
+	int bulletHandle;
 	bool isShot_;
 
 public:

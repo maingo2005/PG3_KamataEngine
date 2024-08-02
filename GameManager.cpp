@@ -1,10 +1,11 @@
 #include "GameManager.h"
 using namespace std;//stdを省略できる
 
-GameManager::GameManager(){
+GameManager::GameManager() {
 	sceneArr_[TITLE] = make_unique<TitleScene>();
 	sceneArr_[STAGE] = make_unique<StageScene>();
 	sceneArr_[CLEAR] = make_unique<ClearScene>();
+	sceneArr_[OVER] = make_unique<OverScene>();
 
 	currentSceneNo_ = TITLE;
 }
