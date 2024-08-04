@@ -20,6 +20,8 @@ void Enemy::Update() {
 }
 
 void Enemy::Draw() {
-	Novice::DrawEllipse((int)pos_.x, (int)pos_.y, radius_, radius_, 0.0f, RED, kFillModeSolid);
-	Novice::DrawSprite((int)pos_.x - 15, (int)pos_.y - 15, enemyHandle, 1.0f, 1.0f, 0.0f, WHITE);
+	if(isAlive_==true){
+		Novice::DrawEllipse((int)pos_.x, (int)pos_.y, radius_, radius_, 0.0f, RED, kFillModeSolid);
+		Novice::DrawSprite((int)pos_.x - 15, (int)pos_.y - 15, enemyHandle, 1.0f, 1.0f, 0.0f, WHITE);
+	}
 }

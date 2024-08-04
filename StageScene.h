@@ -11,8 +11,6 @@ public:
 	~StageScene();
 	void Update(char* keys, char* preKeys) override;
 	void Draw() override;
-
-	int enemyHP(int hp);
 public:
 	Player* player_;
 	Enemy* enemy_;
