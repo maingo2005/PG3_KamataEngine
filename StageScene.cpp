@@ -11,6 +11,7 @@ StageScene::~StageScene() {
 void StageScene::Init() {
 	player_ = new Player({ 1280 / 2, 720 / 2 }, 16, 4);
 	enemy_ = new Enemy({ 100, 300 }, 3, 16, true);
+	stageHandle = Novice::LoadTexture("./Resources/S.png");
 }
 
 void StageScene::Update(char* keys, char* preKeys) {
@@ -39,7 +40,7 @@ void StageScene::Update(char* keys, char* preKeys) {
 }
 
 void StageScene::Draw() {
-	Novice::DrawBox(0, 0, 1280, 720, 0.0f, 0x00000064, kFillModeSolid);
+	Novice::DrawSprite(0, 0, stageHandle, 1.0f, 1.0f, 0.0f, WHITE);
 	player_->Draw();
 	enemy_->Draw();
 }

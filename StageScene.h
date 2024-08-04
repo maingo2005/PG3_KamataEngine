@@ -14,4 +14,5 @@ public:
 public:
 	Player* player_;
 	Enemy* enemy_;
+	int stageHandle;
 };

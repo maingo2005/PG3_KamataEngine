@@ -16,6 +16,22 @@ Player::~Player() {
 }
 
 void Player::Update(char* keys, char* preKeys) {
+	if (pos_.x > 1280 - (float)r_) {
+		pos_.x = 1280 - (float)r_;
+	}
+
+	if (pos_.x < (float)r_) {
+		pos_.x = (float)r_;
+	}
+
+	if (pos_.y > 720 - (float)r_) {
+		pos_.y = 720 - (float)r_;
+	}
+
+	if (pos_.y < (float)r_) {
+		pos_.y = (float)r_;
+	}
+
 	if (keys[DIK_W] && preKeys[DIK_W]) {
 		pos_.y -= speed_;
 	}

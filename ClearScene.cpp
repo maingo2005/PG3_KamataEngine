@@ -1,7 +1,9 @@
 #include <Novice.h>
 #include "ClearScene.h"
 
-void ClearScene::Init() {}
+void ClearScene::Init() {
+	clearHandle = Novice::LoadTexture("./Resources/C.png");
+}
 
 void ClearScene::Update(char* keys, char* preKeys) {
 	if (!preKeys[DIK_SPACE] && keys[DIK_SPACE]) {
@@ -10,6 +12,5 @@ void ClearScene::Update(char* keys, char* preKeys) {
 }
 
 void ClearScene::Draw() {
-	Novice::DrawBox(0, 0, 1280, 720, 0.0f, 0xffff0064, kFillModeSolid);
-	Novice::ScreenPrintf(600, 360, "Clear");
+	Novice::DrawSprite(0, 0, clearHandle, 1.0f, 1.0f, 0.0f, WHITE);
 }
