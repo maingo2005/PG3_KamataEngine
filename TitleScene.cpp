@@ -1,10 +1,16 @@
 #include <Novice.h>
 #include "TitleScene.h"
+#include "Sounds.h"
 
-void TitleScene::Init() {}
+void TitleScene::Init() {
+	titleHandle = 0;
+}
 
 void TitleScene::Update(char* keys, char* preKeys) {
 	titleHandle = Novice::LoadTexture("./Resources/T.png");
+
+	TitleAudio();
+
 	if (!preKeys[DIK_SPACE] && keys[DIK_SPACE]) {
 		sceneNo = STAGE;
 	}

@@ -11,10 +11,11 @@ StageScene::~StageScene() {
 void StageScene::Init() {
 	player_ = new Player({ 1280 / 2, 720 / 2 }, 16, 4);
 	enemy_ = new Enemy({ 100, 300 }, 3, 16, true);
-	stageHandle = Novice::LoadTexture("./Resources/S.png");
+	stageHandle = Novice::LoadTexture("./Resources/S.png");	
 }
 
 void StageScene::Update(char* keys, char* preKeys) {
+
 	player_->Update(keys, preKeys);
 	enemy_->Update();
 

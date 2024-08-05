@@ -68,6 +68,9 @@
     <ClCompile Include="OverScene.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
+    <ClCompile Include="Sounds.cpp">
+      <Filter>KamataEngine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
@@ -152,5 +155,6 @@
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="Struct.h" />
     <ClInclude Include="OverScene.h" />
+    <ClInclude Include="Sounds.h" />
   </ItemGroup>
 </Project>
